@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+}
+.silder{
+    margin: auto;
+    position: relative;
+    width: auto; 
+    height: 100px;
+    overflow: hidden;
+
+}
+.slide-track{
+    animation: scroll 5s linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+}
+@keyframes scroll{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-250px * 7));
+    }
+}
+h1{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
